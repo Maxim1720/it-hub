@@ -1,0 +1,70 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+    height: 10%;
+}
+
+.link{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    transition-duration: 200ms;
+}
+
+.link:hover{
+    color: yellow;
+}
+
+
+.btn{
+    background-color: gray;
+    transition-duration: 200ms;
+}
+
+.btn:active{
+    background-color: yellow;
+}
+
+
+.focus{
+    outline: none;
+    background-color: aqua;
+    transition-duration: 200ms;
+}
+
+.focus:focus{
+    background-color:yellowgreen;
+}
+
+
+.list li{
+    color: red;
+    transition-duration: 200ms;
+}
+
+.list li:hover{
+    font-size: 30px;
+}
+
+.list li:first-child{
+    color: green;
+}
+
+.list li:last-child{
+    color: aqua
+}
+
+
+.list li:nth-child(3){
+    color: blueviolet;
+}
+
+.quete::before{
+    content: "💕🙌😎😉🤞✌💋🐱‍💻🐱‍🐉🐱‍🐉🐱‍👓🐱‍👓🐱‍👓🎉🎂🎶😢🤦‍♂️🤷‍♀️👌";
+}
+
+.quete::after{
+    content: "author: Maxim";
+}
