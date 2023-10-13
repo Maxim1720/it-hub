@@ -11,16 +11,20 @@
 .bg-img{
     border: 1px solid rgb(250, 212, 0);
     margin-top: 50px;
-    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgdZpEDslKnjBmPC6dlF6pf9Q2m1o5aMdHwg&usqp=CAU"); */
     background-image: url("../img/images.jfif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .bg-size{
     width: 200px;
     height: 200px;
+    transition-duration: 200ms;
 }
-
-hr{
-    background-color: rgb(250, 212, 0);
+.bg-size:hover{
+    width: 300px;
+    height: 300px;
+    margin-left: 10px;
 }
 
