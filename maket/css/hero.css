@@ -1,0 +1,33 @@
+.hero{
+    background-color: #F5F5F7;
+    padding: 70px 0px 40px 0px;
+}
+
+.hero-title{
+    text-transform: uppercase;
+    color: #490E84;
+    font-size: 64px; 
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.hero-inner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-btn{
+    border-radius: 30px;
+    background-color: #490E84;
+    color: white;
+    padding: 20px 0;
+    width: 350px;
+    margin-top: 25px;
+
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    text-align: center;
+}

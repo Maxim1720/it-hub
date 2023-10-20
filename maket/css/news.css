@@ -1,0 +1,44 @@
+.new{
+    margin: 80px 0;
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #717171;
+    margin-bottom: 50px;
+}
+
+.new-left{
+    width: 560px;
+    margin-right: 190px;
+}
+
+.new-right{
+
+}
+
+.new-inner{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.new-left p{
+    color: #0A0A0A;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 30px;
+}
+
+.new-left p:last-child{
+    margin-bottom: 0;
+}
+
+.strong{
+    font-size: 20px;
+    font-weight: 700;
+}

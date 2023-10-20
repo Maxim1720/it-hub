@@ -1,0 +1,30 @@
+.color{
+
+}
+
+.color-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.color-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color-item h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #0A0A0A;
+    font-weight: 700;
+    line-height: 130%;
+    font-size: 20px;
+}
+
+.color p{
+    color: #0A0A0A;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+}
