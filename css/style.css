@@ -17,9 +17,12 @@ a{
     text-decoration: none;
 }
 
+img{
+    max-width: 100%;
+}
+
 .container{
-    min-width: 1160px;
-    width: 1160px;
+    max-width: 1160px;
     margin: 0 auto;
     padding-left:10px;
     padding-right: 10px;
@@ -39,7 +42,6 @@ header{
 
 
 .menu{
-    
     display: flex;
 }
 .menu li{
@@ -61,3 +63,34 @@ header{
 }
 
 
+@media screen and (max-width: 500px){
+    header{
+        /* flex-wrap: wrap; */
+        /* font-size: 1px; */
+    }
+
+    .header-inner{
+        flex-direction: column;
+        width: 100hw;
+        flex-wrap: wrap;
+        font-size: 10px;
+    }
+
+    .menu{
+        flex-wrap: wrap;
+        font-weight: 400;
+    }
+
+    .logo{
+        order:-1;
+        margin-bottom: 10px;
+    }
+    .phone{
+    }
+
+    .container{
+        max-width: 100%;
+    }
+
+
+}
