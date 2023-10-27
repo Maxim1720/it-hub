@@ -1,0 +1,38 @@
+.bg {
+  background-color: red; }
+
+nav ul {
+  display: flex; }
+nav li {
+  text-decoration: none; }
+nav a {
+  color: green; }
+
+.block-1 {
+  background-color: green;
+  border: 2px solid black;
+  box-sizing: border-box; }
+
+.block-2 {
+  background-color: red;
+  border: 2px solid black;
+  width: 200px;
+  height: 200px; }
+
+.block-3 {
+  background-color: blue;
+  border: 2px solid black;
+  width: 150px;
+  height: 150px; }
+
+.menu-list {
+  display: flex;
+  flex-direction: column; }
+  .menu-list_li {
+    color: pink;
+    font-size: 30px;
+    width: 200px; }
+    .menu-list_li:hover {
+      color: red; }
+
+/*# sourceMappingURL=main.css.map */

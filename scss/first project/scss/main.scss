@@ -1,0 +1,51 @@
+@import 'var';
+@import 'mixin';
+
+.bg{
+    background-color: $red;
+}
+
+nav{
+    ul{
+        display: flex;
+    }
+    li{
+        text-decoration: none;
+    }
+    a{
+        color: $green;
+    }
+
+}
+
+.block-1{
+    @include block($green);
+    box-sizing: border-box;
+}
+
+.block-2{
+    @include block($red);
+    @include size(200px, 200px)
+}
+
+.block-3{
+    @include block($blue);
+    @include size(150px, 150px)
+}
+
+
+.menu{
+    &-list{
+        display: flex;
+        flex-direction: column;
+        &_li{
+            color: pink;
+            font-size: 30px;
+            width: 100px + 100px;
+            &:hover{
+                color:red;
+            }
+        }
+    }
+
+}
