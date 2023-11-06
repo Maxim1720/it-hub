@@ -8,13 +8,14 @@
 nav{
     ul{
         display: flex;
+        flex-direction: column;
     }
     li{
         text-decoration: none;
     }
-    a{
-        color: $green;
-    }
+    // a{
+    //     color: $green;
+    // }
 
 }
 
@@ -39,12 +40,23 @@ nav{
         display: flex;
         flex-direction: column;
         &_li{
+            $width: 100px;
+            $fontSize: 30px;
             color: pink;
             font-size: 30px;
-            width: 100px + 100px;
+            width: $width*2;
+            list-style: none;
+            transition-duration: 100ms;
             &:hover{
                 color:red;
+                font-size: $fontSize + $fontSize/5;
+                list-style:circle;
             }
+            a{
+                text-decoration:none;
+            }
+            
+
         }
     }
 

@@ -2,11 +2,10 @@
   background-color: red; }
 
 nav ul {
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
 nav li {
   text-decoration: none; }
-nav a {
-  color: green; }
 
 .block-1 {
   background-color: green;
@@ -31,8 +30,14 @@ nav a {
   .menu-list_li {
     color: pink;
     font-size: 30px;
-    width: 200px; }
+    width: 200px;
+    list-style: none;
+    transition-duration: 100ms; }
     .menu-list_li:hover {
-      color: red; }
+      color: red;
+      font-size: 36px;
+      list-style: circle; }
+    .menu-list_li a {
+      text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
