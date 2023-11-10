@@ -128,12 +128,11 @@ function isXXICentury(year) {
         return "Нет, это не XXI век";
     }
 }
-console.log(isXXICentury(2023));
+console.log(isXXICentury(prompt("Введите год")));
 
 // 10. Функция для приветствия пользователя
-function greetUser() {
-    let name = prompt("Мне нужно ваше имя: ");
-    alert("Привет, " + name + "!");
+function greetUser(name) {
+    return("Привет, " + name + "!");
 }
 
-greetUser();
+greetUser("Maxim");
