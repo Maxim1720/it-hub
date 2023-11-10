@@ -1,0 +1,13 @@
+@mixin block($bgColor){
+    background-color: $bgColor;
+    border: 2px solid black;
+}
+
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin textOverflowHidder{
+    text-overflow:clip;
+}

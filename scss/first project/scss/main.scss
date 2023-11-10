@@ -1,0 +1,63 @@
+@import 'var';
+@import 'mixin';
+
+.bg{
+    background-color: $red;
+}
+
+nav{
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    li{
+        text-decoration: none;
+    }
+    // a{
+    //     color: $green;
+    // }
+
+}
+
+.block-1{
+    @include block($green);
+    box-sizing: border-box;
+}
+
+.block-2{
+    @include block($red);
+    @include size(200px, 200px)
+}
+
+.block-3{
+    @include block($blue);
+    @include size(150px, 150px)
+}
+
+
+.menu{
+    &-list{
+        display: flex;
+        flex-direction: column;
+        &_li{
+            $width: 100px;
+            $fontSize: 30px;
+            color: pink;
+            font-size: 30px;
+            width: $width*2;
+            list-style: none;
+            transition-duration: 100ms;
+            &:hover{
+                color:red;
+                font-size: $fontSize + $fontSize/5;
+                list-style:circle;
+            }
+            a{
+                text-decoration:none;
+            }
+            
+
+        }
+    }
+
+}
