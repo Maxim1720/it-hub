@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: 30px;
+  text-align: center; }
+
+body {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  background-color: black; }
+
+.form {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid yellow;
+  border-radius: 30px;
+  padding: 20px;
+  height: 30%; }
+  .form .input-block {
+    background-color: transparent; }
+  .form input {
+    border-radius: 30px;
+    background-color: black;
+    width: 100%; }
+    .form input::placeholder {
+      border: none; }
+  .form select {
+    background-color: black;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px; }
+
+#calc-btn {
+  width: 50%; }
+
+.result-place {
+  padding: 5px;
+  background-color: #ff9100;
+  border-radius: 100px;
+  width: 40%;
+  animation-name: resizable;
+  animation-iteration-count: infinite;
+  animation-duration: 700ms;
+  animation-fill-mode: forwards; }
+@keyframes resizable {
+  0% {
+    width: 100%; }
+  15% {
+    width: 102%; }
+  25% {
+    width: 105%; }
+  40% {
+    width: 107%; }
+  50% {
+    width: 110%; }
+  60% {
+    width: 107%; }
+  75% {
+    width: 105%; }
+  100% {
+    width: 100%; } }
+.container {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  min-width: 200px; }
+
+.input-field {
+  width: 100%; }
+
+@media screen and (max-width: 450px) {
+  * {
+    font-size: 20px; }
+
+  .container {
+    width: 100%; } }
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .container {
+    width: 40%; } }
+
+/*# sourceMappingURL=main.css.map */
