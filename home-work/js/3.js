@@ -69,6 +69,8 @@ const users = [
   }),
 ];
 
+console.log(users);
+
 users.push(
   new User({
     firstname: "new",
