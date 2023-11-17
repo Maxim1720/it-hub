@@ -1,0 +1,16 @@
+.squal{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.active{
+    background-color: blue;
+
+}
+
+.btn{
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+}
