@@ -1,0 +1,43 @@
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+}
+
+.slide {
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+    display: none;
+}
+.slide.active{
+    display: block;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 20px;
+    height: 100%;
+}
+
+
+.arrows{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.arrow{
+    
+}
