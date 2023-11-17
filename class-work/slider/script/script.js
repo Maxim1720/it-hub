@@ -11,3 +11,12 @@ next.addEventListener('click', (e)=>{
     }
     slides[index].classList.add('active');
 });
+
+prev.addEventListener('click', e=>{
+    index--;
+    slides.forEach(i=>i.classList.remove('active'));
+    if(index<0){
+        index=slides.length-1;
+    }
+    slides[index].classList.add('active')
+});
