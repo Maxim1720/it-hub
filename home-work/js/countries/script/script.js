@@ -75,6 +75,5 @@ submitBtn.onclick = (e) => {
     })
     .finally(() => {
       clearInterval(interval);
-      
     });
 };
