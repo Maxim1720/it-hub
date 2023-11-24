@@ -1,0 +1,5 @@
+1
+Загрузка
+2
+TypeError: fetch failed Ошибка
+finally
