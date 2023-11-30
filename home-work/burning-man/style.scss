@@ -1,0 +1,244 @@
+@use "sass:math";
+
+$page-h: 2058;
+$page-w: 1600;
+
+$first-section-height: calc(round((900 * 100%)/2058));
+
+body {
+  max-height: $page-h + px;
+//   height: 100vh;
+//   max-width: $page-w + px;
+//   margin: 0 auto;
+  font-family: "Anton", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 73%;
+}
+.header {
+  padding-top: round(57 * 100% / (($first-section-height/100%) * $page-h));
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 69px;
+
+  nav {
+    ul {
+      display: flex;
+      gap: 40px;
+      li {
+        text-decoration: none;
+        list-style: none;
+
+        font-family: Anton;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+    }
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.first-section {
+  background: linear-gradient(
+      106deg,
+      rgba(0, 0, 0, 0.37) 5.05%,
+      rgba(0, 0, 0, 0.15) 112.97%
+    ),
+    url("/img/first-section-bg.jpg"), lightgray 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  min-height: $first-section-height;
+  height: 900px;
+  width: 100%;
+//   max-width: $page-w + px;
+  background-position: center;
+  color: #fff;
+  * {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.content {
+  margin-top: 216px;
+  margin-bottom: 322px;
+  h3 {
+    color: #fff;
+    font-family: Anton;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: #fff;
+    font-family: Anton;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  button {
+    border: 1px solid #fff;
+    background: transparent;
+    cursor: pointer;
+
+    width: 238px;
+    height: 57px;
+    flex-shrink: 0;
+
+    color: #fff;
+    text-align: center;
+    font-family: "Anton";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+  }
+}
+
+.about {
+  color: #000;
+  margin-top: 113px;
+  width: 100%;
+}
+
+.about-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  h2 {
+    color: #000;
+    font-family: Anton;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}
+
+.about-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-break: break-word;
+//   height: 100%;
+//   width: 564px;
+
+    @media screen and (max-width: 1600px) {
+        // justify-content: flex-start;
+    }
+}
+
+.about-items {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  margin-top: 58px;
+  width: 100%;
+  height: 100%;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;    
+  }
+}
+
+.about-item__title {
+  color: #000;
+  font-family: Anton;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.about-item__description {
+  color: #000;
+  text-align: justify;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 162.682%; /* 26.029px */
+}
+
+.about-item__images {
+  display: flex;
+  gap: 29px;
+//   justify-content: space-evenly;
+
+  img {
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    @media screen and (max-width: 1600px) {
+        // width: 50%;  
+    }
+
+  }
+
+  @media screen and (max-width: 1600px) {
+    & {
+    //   flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}
+
+.about-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  margin-bottom: 67px;
+}
+
+.footer {
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 400;
+
+  margin-top: 114px;
+
+  height: 129px;
+}
+
+.footer-inner {
+  display: flex;
+  gap: 55px;
+}
