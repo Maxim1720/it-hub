@@ -99,28 +99,28 @@ html {
   min-height: 100vh;
   min-width: 100vw;
   width: 100vw;
-  //   padding-top: 13.125%;
-  //   padding-top: 13.125vh;
   padding-top: 89px;
 
   color: $secondary-color;
-  //   text-transform: uppercase;
+
+  &-title {
+    color: $secondary-color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
 
   &-inner {
+    // @include section-inner;
+
     nav {
       @include animationFromTop;
-      margin-right: 73px;
+      // margin-right: 73px;
       display: flex;
       align-items: center;
       justify-content: space-between;
 
-      .title {
-        color: $secondary-color;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-      }
       ul {
         display: flex;
         // justify-content: space-between;
@@ -160,16 +160,42 @@ html {
         }
       }
     }
+
+    .burger {
+      cursor: pointer;
+      display: none;
+      @media screen and (max-width: 1000px) {
+        display: block;
+        position: relative;
+        z-index: 20;
+        &.active .burger-item {
+          background-color: black;
+        }
+      }
+
+      &-item {
+        background-color: white;
+        height: 3px;
+        width: 30px;
+        margin-bottom: 5px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }
 
 .hero {
-  //   margin-top: 12px;
+  margin-top: 12px;
   @media screen and (max-width: 768px) {
     margin-top: 99px;
   }
 
   &-inner {
+    // @include section-inner;
+    // padding-top: 109px;
+    // padding-bottom: 182px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -196,14 +222,15 @@ html {
       flex-direction: column;
       justify-content: flex-end;
       // height: 100%;
-      padding-top: 109px;
-      @media screen and (max-width: 1385px) {
+      // padding-top: 109px;
+      @media screen and (max-width: 1386px) {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
         padding-top: 0;
-        // margin-top: 99px;
+        margin-top: 99px;
+        text-align: center;
       }
 
       .first-title {
@@ -302,7 +329,7 @@ html {
         width: 100%;
       }
 
-      @media screen and (max-width: 1385px) {
+      @media screen and (max-width: 1386px) {
         // margin-top: 29px;
         display: flex;
         justify-content: center;
@@ -894,7 +921,7 @@ html {
     padding-top: 17.3%;
     height: 100%;
     .title {
-      @include title($primary-color)
+      @include title($primary-color);
     }
   }
   &-items {
