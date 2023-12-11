@@ -14,47 +14,68 @@
 }
 
 @keyframes slideInLeft {
-    0%{
-        transform: translateX(-100%);
-    } 
-    100%{
-        transform: translateX(0);
-    }    
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
-@keyframes slideInRight{
-    0%{
-        transform: translateX(100%);
-    }    
-    100%{
-        transform: translateX(0);
-    }
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes slideInTop {
-    0%{
-        transform: translateY(-200%);
-    }    
-    100%{
-        transform: translateX(0);
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@mixin slideAnimation($anim) {
+  animation: 1s ease-out 0s 1 $anim;
+}
+
+@mixin animationFromLeft {
+  @include slideAnimation(slideInLeft);
+}
+
+@mixin animationFromRight {
+  @include slideAnimation(slideInRight);
+}
+
+@mixin animationFromTop {
+  @include slideAnimation(slideInTop);
+}
+
+
+@mixin section-inner{
+    padding-top: 14.6vh;
+
+    @media screen and (max-width:1100px) {
+        padding-top: 94px;
     }
 }
 
+@mixin title($color) {
+  padding: 0;
+  margin: 0;
+  color: $color;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
 
-
-
-@mixin slideAnimation($anim){
-    animation: 1s ease-out 0s 1 $anim;
-}
-
-@mixin animationFromLeft{
-    @include slideAnimation(slideInLeft);
-}
-
-@mixin animationFromRight{
-    @include slideAnimation(slideInRight);
-}
-
-@mixin animationFromTop{
-    @include slideAnimation(slideInTop);
+  @media screen and (max-width: 890px) {
+    font-size: 30px;
+  }
 }
