@@ -1,36 +1,29 @@
 import "./public/style/style.scss";
 
-const hero = document.querySelector(".hero");
 const burger = document.querySelector("#burger");
-const nav = document.querySelector("nav");
+const accordions = document.querySelectorAll(".accordion-list");
+const programBtn = document.querySelector(".program-btn");
 
-const navUl = nav.getElementsByTagName("ul")[0];
-
-const accordionItems = document.querySelectorAll(".accordion-list-item");
-
-accordionItems.forEach((i) => {
-  console.log(i);
-  const btn = i.querySelector(".accordion-list-item-btn");
-  btn.addEventListener("click", (e) => {
-    i.classList.toggle("active");
-    changeAccordionItem(i);
-    accordionItems.forEach((item) => {
-      if (item !== i) {
-        item.classList.remove("active");
-        changeAccordionItem(item);
-      }
+accordions.forEach((acc) => {
+  const items = acc.querySelectorAll(".accordion-list-item");
+  items.forEach((ai) => {
+    const btn = ai.querySelector(".accordion-list-item-btn");
+    btn.addEventListener("click", (e) => {
+      ai.classList.toggle("active");
+      Array.from(items)
+        .filter((i) => i !== ai)
+        .forEach((i) => i.classList.remove("active"));
     });
   });
 });
 
-function changeAccordionItem(item){
-  const btn = item.querySelector(".accordion-list-item-btn");
-}
-
 burger.addEventListener("click", (e) => {
+  const nav = document.querySelector("nav");
+  const navUl = nav.querySelector("ul");
   navUl.classList.toggle("active");
   burger.classList.toggle("active");
 });
 
-const programBtn = document.querySelector(".program-btn");
-programBtn.addEventListener('click', (e)=>document.querySelector('.program').scrollIntoView())
+programBtn.addEventListener("click", (e) =>
+  document.querySelector(".program").scrollIntoView()
+);
