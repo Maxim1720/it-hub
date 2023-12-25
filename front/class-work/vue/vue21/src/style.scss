@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+
+.container{
+    height: 100%;
+    margin: 0 auto;
+    width: 50vh;
+    word-wrap: break-word;
+    display: grid;
+    gap: 10px;
+    justify-items: stretch;
+    width: 50%;
+    text-align: center;
+}
+
+.active{
+    color: red;
+    background-color: blue;
+}
+
+.cars{
+    margin-top: 10vh;
+    &-item{
+
+    }
+}
