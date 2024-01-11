@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+
+    <style>
+        body{
+            font-size: 35px;
+        }
+
+        form {
+            font-size: inherit;
+            display: flex;
+            flex-direction: column;
+            width: 25svw;
+            margin: 20svh auto;
+            row-gap: 20px;
+            border: 1px solid darkgray;
+            border-radius: 20px;
+            padding: 12px;
+            box-shadow: 0px 1px 12px black;
+            background-color: whitesmoke;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 24px;
+        }
+
+        input {
+            border-radius: 12px;
+            border: none;
+            /*background-color: beige;*/
+            text-align: center;
+        }
+
+        .btn{
+            background-color: #359c00;
+            color: #fff;
+            width: fit-content;
+            padding: 12px 10px;
+            align-self: end;
+        }
+
+        .btn:active{
+            box-shadow: 0px 1px 5px black;
+        }
+
+    </style>
+</head>
+<body>
+<form action="../request.php" method="post">
+    <input type="text" name="name" placeholder="name">
+    <input type="text" name="age" placeholder="age">
+    <input class="btn" type="submit" value="Submit">
+</form>
+</body>
+</html>
