@@ -1,0 +1,24 @@
+{
+  "name": "itschool/lesson4",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "Itschool\\Lesson4\\": "src/",
+      "Itschool\\Lesson4\\Example1\\": "src/example1",
+      "Itschool\\Lesson4\\Example3\\": "src/example3",
+      "Itschool\\Lesson4\\Example4\\": "src/example4",
+      "Itschool\\Lesson4\\Example5\\": "src/example5",
+      "Itschool\\Lesson4\\Example6\\": "src/example6",
+      "Itschool\\Lesson4\\Example7\\": "src/example7"
+    }
+  },
+  "authors": [
+    {
+      "name": "maksim1708",
+      "email": "musiev_maksim@mail.ru"
+    }
+  ],
+  "require": {
+    "twig/twig": "^3.0"
+  }
+}

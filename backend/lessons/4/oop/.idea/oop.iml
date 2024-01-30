@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="Itschool\Lesson4\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example1" isTestSource="false" packagePrefix="Itschool\Lesson4\Example1\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example3" isTestSource="false" packagePrefix="Itschool\Lesson4\Example3\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example4" isTestSource="false" packagePrefix="Itschool\Lesson4\Example4\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example5" isTestSource="false" packagePrefix="Itschool\Lesson4\Example5\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example6" isTestSource="false" packagePrefix="Itschool\Lesson4\Example6\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/example7" isTestSource="false" packagePrefix="Itschool\Lesson4\Example7\" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/twig/twig" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
